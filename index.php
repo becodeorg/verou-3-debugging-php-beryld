@@ -10,7 +10,7 @@ declare(strict_types=1);
 // phpinfo();
 
 
-$newLine = "<br/><hr/><br/><br/>";
+
 
 // echo "Exercise 1 starts here:";
 $x = 1;  //assign a variable
@@ -30,8 +30,8 @@ newExercise(2);
 
 $week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 $monday = $week[0]; // Just need to change 1 by 0 as it is the first element of an array ... too ... simple ? 
-echo $newline;
-echo "$newline exercise 2 : ";
+
+
 echo $monday;
 
 newExercise(3);
@@ -54,6 +54,35 @@ foreach($week as &$day) // added the & sign for the BONUS !
 }
 
 print_r($week);
+
+newExercise(5);
+
+
+
+
+
+
+// === Exercise 5 ===
+// The result should be: "Copyright © <current year> - BeCode"
+function copyright( $year)
+{
+    print "Copyright &copy; $year BeCode";  //change return to print and added the word Copyright ( &copy = the icon 'Y' = the current year )
+}
+//print the copyright
+copyright(date('Y'));
+
+
+newExercise(6);
+// === Exercise 6 ===
+// The array should be printing every letter of the alphabet (a-z)
+// Fix the code so the for loop pushes each letter of the alphabet in the array
+
+$arr = [];
+for ($i = 0; $letter; $i++) {
+    array_push($arr, $letter);
+}
+
+print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
 
 
 ini_set('display_errors', 1);

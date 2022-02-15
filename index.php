@@ -78,11 +78,14 @@ newExercise(6);
 // Fix the code so the for loop pushes each letter of the alphabet in the array
 
 $arr = [];
-for ($i = 0; $letter; $i++) {
-    array_push($arr, $letter);
+for ($i = 0; $i<1; $i++) {
+    array_push($arr, range('A', 'Z'), $letter);  // not sure about this one as it's not really a for loop anymore ? 
 }
 
 print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
+
+
+
 
 
 ini_set('display_errors', 1);

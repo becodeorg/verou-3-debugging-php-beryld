@@ -85,7 +85,28 @@ for ($i = 0; $i<1; $i++) {
 print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
 
 
-
+newExercise(7);
+// === Exercise 7 ===
+// Have the result of the function say: "Welcome John Smith" or "No access"
+// Depending on the given information.
+function login(string $email, string $password)
+{
+    if($email == 'john@example.be' && $password == 'pocahontas') { // changed || to && as we need both conditions 
+        return 'Welcome John Smith'; // can only have one return statement in a function
+        
+    }
+    else
+    { return 'No access';
+    }
+}
+/* do not change any code below */
+//should greet the user with his full name (John Smith)
+echo login('john@example.be', 'pocahontas');
+//Should say: no access
+echo login('john@example.be', 'dfgidfgdfg');
+//Should say: no access
+echo login('wrong@example', 'wrong');
+/* You can change code again */
 
 
 ini_set('display_errors', 1);
